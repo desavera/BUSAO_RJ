@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="SystemSatWSTest" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="WServiceSoap" type="wsdl" bindingName="{http://tempuri.org/}WServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://200.152.54.164:90/wservice.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/ListaClientesPorUsuario" name="ListaClientesPorUsuario" bindingOperationName="ListaClientesPorUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaClientesPorUsuario>
+         <tem:Id_Config>?</tem:Id_Config>
+         <!--Optional:-->
+         <tem:Usuario>?</tem:Usuario>
+         <!--Optional:-->
+         <tem:Senha>?</tem:Senha>
+      </tem:ListaClientesPorUsuario>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaClientesPorUsuario"/></con:call><con:call name="Request 2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaClientesPorUsuario>
+         <tem:Id_Config>3</tem:Id_Config>
+         <!--Optional:-->
+         <tem:Usuario>devmobile</tem:Usuario>
+         <!--Optional:-->
+         <tem:Senha>devmobile</tem:Senha>
+      </tem:ListaClientesPorUsuario>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaClientesPorUsuario"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaLinhasCliente" name="ListaLinhasCliente" bindingOperationName="ListaLinhasCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaLinhasCliente>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Cliente>?</tem:Cliente>
+      </tem:ListaLinhasCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaLinhasCliente"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaPontosReferenciaRota" name="ListaPontosReferenciaRota" bindingOperationName="ListaPontosReferenciaRota" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaPontosReferenciaRota>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Rota>?</tem:Rota>
+      </tem:ListaPontosReferenciaRota>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaPontosReferenciaRota"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaRotasLinha" name="ListaRotasLinha" bindingOperationName="ListaRotasLinha" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaRotasLinha>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Linha>?</tem:Linha>
+      </tem:ListaRotasLinha>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaRotasLinha"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaTrajetosCliente" name="ListaTrajetosCliente" bindingOperationName="ListaTrajetosCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaTrajetosCliente>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Cliente>?</tem:Cliente>
+      </tem:ListaTrajetosCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaTrajetosCliente"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosProximos" name="ListaVeiculosProximos" bindingOperationName="ListaVeiculosProximos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaVeiculosProximos>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+      </tem:ListaVeiculosProximos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaVeiculosProximos"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaVeiculosTrajeto>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Id_Linha>?</tem:Id_Linha>
+         <tem:Id_Rota>?</tem:Id_Rota>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+         <tem:QuantidadeVeiculos>?</tem:QuantidadeVeiculos>
+         <tem:QuantidadePontos>?</tem:QuantidadePontos>
+         <!--Optional:-->
+         <tem:HashCode>?</tem:HashCode>
+      </tem:ListaVeiculosTrajeto>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaVeiculosTrajeto"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="WServiceSoap12" type="wsdl" bindingName="{http://tempuri.org/}WServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://200.152.54.164:90/wservice.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://200.152.54.164:90/wservice.asmx?wsdl"><con:part><con:url>http://200.152.54.164:90/wservice.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListaClientesPorUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaClientesPorUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaClientesPorUsuarioResult" type="tns:ArrayOfWSCliente"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSCliente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSCliente" nillable="true" type="tns:WSCliente"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSCliente">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Cliente" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListaLinhasCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Cliente" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaLinhasClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaLinhasClienteResult" type="tns:ArrayOfWSLinha"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSLinha">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSLinha" nillable="true" type="tns:WSLinha"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSLinha">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Linha" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Cliente" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCliente" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Intervalo" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Rota" type="tns:ArrayOfWSRota"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfWSRota">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSRota" nillable="true" type="tns:WSRota"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSRota">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Rota" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Sentido" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Ponto" type="tns:ArrayOfWSPonto"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfWSPonto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSPonto" nillable="true" type="tns:WSPonto"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSPonto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Ponto" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Ordem" type="s:short"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListaRotasLinha">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Linha" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaRotasLinhaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaRotasLinhaResult" type="tns:ArrayOfWSRota"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaPontosReferenciaRota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Rota" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaPontosReferenciaRotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaPontosReferenciaRotaResult" type="tns:ArrayOfWSPontoReferencia"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSPontoReferencia">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSPontoReferencia" nillable="true" type="tns:WSPontoReferencia"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSPontoReferencia">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Rota" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_PontoReferencia" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Localidade" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Distancia" type="s:decimal"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListaTrajetosCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Cliente" type="s:short"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaTrajetosClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaTrajetosClienteResult" type="tns:ArrayOfWSTrajeto"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSTrajeto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSTrajeto" nillable="true" type="tns:WSTrajeto"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSTrajeto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Linha" type="tns:ArrayOfWSLinha"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListaVeiculosProximos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaVeiculosProximosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaVeiculosProximosResult" type="tns:ArrayOfWSVeiculo"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSVeiculo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSVeiculo" nillable="true" type="tns:WSVeiculo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSVeiculo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Veiculo" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Distancia" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Velocidade" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Tempo" type="s:double"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListaVeiculosTrajeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Config" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Linha" type="s:short"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Id_Rota" type="s:short"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double"/>
+            <s:element minOccurs="1" maxOccurs="1" name="QuantidadeVeiculos" type="s:short"/>
+            <s:element minOccurs="1" maxOccurs="1" name="QuantidadePontos" type="s:short"/>
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaVeiculosTrajetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaVeiculosTrajetoResult" type="tns:ArrayOfWSVeiculosTrajeto"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWSVeiculosTrajeto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSVeiculosTrajeto" nillable="true" type="tns:WSVeiculosTrajeto"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSVeiculosTrajeto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Linha" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_Rota" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadeVeiculos" type="s:short"/>
+          <s:element minOccurs="1" maxOccurs="1" name="QuantidadePontos" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="PontosRota" type="tns:ArrayOfWSPonto"/>
+          <s:element minOccurs="0" maxOccurs="1" name="PontosReferencia" type="tns:ArrayOfWSPontoReferencia"/>
+          <s:element minOccurs="0" maxOccurs="1" name="VeiculosProximos" type="tns:ArrayOfWSVeiculo"/>
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListaClientesPorUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaClientesPorUsuario"/>
+  </wsdl:message>
+  <wsdl:message name="ListaClientesPorUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaClientesPorUsuarioResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaLinhasClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaLinhasCliente"/>
+  </wsdl:message>
+  <wsdl:message name="ListaLinhasClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaLinhasClienteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaRotasLinhaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaRotasLinha"/>
+  </wsdl:message>
+  <wsdl:message name="ListaRotasLinhaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaRotasLinhaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaPontosReferenciaRotaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaPontosReferenciaRota"/>
+  </wsdl:message>
+  <wsdl:message name="ListaPontosReferenciaRotaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaPontosReferenciaRotaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaTrajetosClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaTrajetosCliente"/>
+  </wsdl:message>
+  <wsdl:message name="ListaTrajetosClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaTrajetosClienteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaVeiculosProximosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaVeiculosProximos"/>
+  </wsdl:message>
+  <wsdl:message name="ListaVeiculosProximosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaVeiculosProximosResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ListaVeiculosTrajetoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaVeiculosTrajeto"/>
+  </wsdl:message>
+  <wsdl:message name="ListaVeiculosTrajetoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaVeiculosTrajetoResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="WServiceSoap">
+    <wsdl:operation name="ListaClientesPorUsuario">
+      <wsdl:input message="tns:ListaClientesPorUsuarioSoapIn"/>
+      <wsdl:output message="tns:ListaClientesPorUsuarioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaLinhasCliente">
+      <wsdl:input message="tns:ListaLinhasClienteSoapIn"/>
+      <wsdl:output message="tns:ListaLinhasClienteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaRotasLinha">
+      <wsdl:input message="tns:ListaRotasLinhaSoapIn"/>
+      <wsdl:output message="tns:ListaRotasLinhaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaPontosReferenciaRota">
+      <wsdl:input message="tns:ListaPontosReferenciaRotaSoapIn"/>
+      <wsdl:output message="tns:ListaPontosReferenciaRotaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaTrajetosCliente">
+      <wsdl:input message="tns:ListaTrajetosClienteSoapIn"/>
+      <wsdl:output message="tns:ListaTrajetosClienteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosProximos">
+      <wsdl:input message="tns:ListaVeiculosProximosSoapIn"/>
+      <wsdl:output message="tns:ListaVeiculosProximosSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosTrajeto">
+      <wsdl:input message="tns:ListaVeiculosTrajetoSoapIn"/>
+      <wsdl:output message="tns:ListaVeiculosTrajetoSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WServiceSoap" type="tns:WServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ListaClientesPorUsuario">
+      <soap:operation soapAction="http://tempuri.org/ListaClientesPorUsuario" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaLinhasCliente">
+      <soap:operation soapAction="http://tempuri.org/ListaLinhasCliente" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaRotasLinha">
+      <soap:operation soapAction="http://tempuri.org/ListaRotasLinha" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaPontosReferenciaRota">
+      <soap:operation soapAction="http://tempuri.org/ListaPontosReferenciaRota" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaTrajetosCliente">
+      <soap:operation soapAction="http://tempuri.org/ListaTrajetosCliente" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosProximos">
+      <soap:operation soapAction="http://tempuri.org/ListaVeiculosProximos" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosTrajeto">
+      <soap:operation soapAction="http://tempuri.org/ListaVeiculosTrajeto" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WServiceSoap12" type="tns:WServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ListaClientesPorUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ListaClientesPorUsuario" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaLinhasCliente">
+      <soap12:operation soapAction="http://tempuri.org/ListaLinhasCliente" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaRotasLinha">
+      <soap12:operation soapAction="http://tempuri.org/ListaRotasLinha" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaPontosReferenciaRota">
+      <soap12:operation soapAction="http://tempuri.org/ListaPontosReferenciaRota" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaTrajetosCliente">
+      <soap12:operation soapAction="http://tempuri.org/ListaTrajetosCliente" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosProximos">
+      <soap12:operation soapAction="http://tempuri.org/ListaVeiculosProximos" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaVeiculosTrajeto">
+      <soap12:operation soapAction="http://tempuri.org/ListaVeiculosTrajeto" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WService">
+    <wsdl:port name="WServiceSoap" binding="tns:WServiceSoap">
+      <soap:address location="http://200.152.54.164:90/wservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WServiceSoap12" binding="tns:WServiceSoap12">
+      <soap12:address location="http://200.152.54.164:90/wservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/ListaClientesPorUsuario" name="ListaClientesPorUsuario" bindingOperationName="ListaClientesPorUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaClientesPorUsuario>
+         <tem:Id_Config>?</tem:Id_Config>
+         <!--Optional:-->
+         <tem:Usuario>?</tem:Usuario>
+         <!--Optional:-->
+         <tem:Senha>?</tem:Senha>
+      </tem:ListaClientesPorUsuario>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaClientesPorUsuarioRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaLinhasCliente" name="ListaLinhasCliente" bindingOperationName="ListaLinhasCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaLinhasCliente>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Cliente>?</tem:Cliente>
+      </tem:ListaLinhasCliente>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaLinhasClienteRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaPontosReferenciaRota" name="ListaPontosReferenciaRota" bindingOperationName="ListaPontosReferenciaRota" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaPontosReferenciaRota>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Rota>?</tem:Rota>
+      </tem:ListaPontosReferenciaRota>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaPontosReferenciaRotaRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaRotasLinha" name="ListaRotasLinha" bindingOperationName="ListaRotasLinha" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaRotasLinha>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Linha>?</tem:Linha>
+      </tem:ListaRotasLinha>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaRotasLinhaRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaTrajetosCliente" name="ListaTrajetosCliente" bindingOperationName="ListaTrajetosCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaTrajetosCliente>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Cliente>?</tem:Cliente>
+      </tem:ListaTrajetosCliente>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaTrajetosClienteRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosProximos" name="ListaVeiculosProximos" bindingOperationName="ListaVeiculosProximos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaVeiculosProximos>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+      </tem:ListaVeiculosProximos>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosProximosRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:ListaVeiculosTrajeto>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Id_Linha>?</tem:Id_Linha>
+         <tem:Id_Rota>?</tem:Id_Rota>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+         <tem:QuantidadeVeiculos>?</tem:QuantidadeVeiculos>
+         <tem:QuantidadePontos>?</tem:QuantidadePontos>
+         <!--Optional:-->
+         <tem:HashCode>?</tem:HashCode>
+      </tem:ListaVeiculosTrajeto>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosTrajetoRequest"/></con:call></con:operation></con:interface><con:testSuite name="WServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaClientesPorUsuario TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaClientesPorUsuario"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaClientesPorUsuario</con:operation><con:request name="ListaClientesPorUsuario"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaClientesPorUsuario>
+         <tem:Id_Config>?</tem:Id_Config>
+         <!--Optional:-->
+         <tem:Usuario>?</tem:Usuario>
+         <!--Optional:-->
+         <tem:Senha>?</tem:Senha>
+      </tem:ListaClientesPorUsuario>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ListaClientesPorUsuario"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaLinhasCliente TestCase" searchProperties="true" id="2b753cd3-c439-463f-a246-1e5873bfee2d"><con:settings/><con:testStep type="request" name="ListaLinhasCliente"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaLinhasCliente</con:operation><con:request name="ListaLinhasCliente"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaLinhasCliente>
+         <tem:Id_Config>3</tem:Id_Config>
+         <tem:Cliente>3</tem:Cliente>
+      </tem:ListaLinhasCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/ListaLinhasCliente" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaPontosReferenciaRota TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaPontosReferenciaRota"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaPontosReferenciaRota</con:operation><con:request name="ListaPontosReferenciaRota"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaPontosReferenciaRota>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Rota>?</tem:Rota>
+      </tem:ListaPontosReferenciaRota>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ListaPontosReferenciaRota"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaRotasLinha TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaRotasLinha"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaRotasLinha</con:operation><con:request name="ListaRotasLinha"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaRotasLinha>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Linha>?</tem:Linha>
+      </tem:ListaRotasLinha>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ListaRotasLinha"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaTrajetosCliente TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaTrajetosCliente"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaTrajetosCliente</con:operation><con:request name="ListaTrajetosCliente"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaTrajetosCliente>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Cliente>?</tem:Cliente>
+      </tem:ListaTrajetosCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/ListaTrajetosCliente" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaVeiculosProximos TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaVeiculosProximos"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaVeiculosProximos</con:operation><con:request name="ListaVeiculosProximos"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaVeiculosProximos>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+      </tem:ListaVeiculosProximos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ListaVeiculosProximos"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaVeiculosTrajeto TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaVeiculosTrajeto"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaVeiculosTrajeto</con:operation><con:request name="ListaVeiculosTrajeto"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListaVeiculosTrajeto>
+         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Id_Linha>?</tem:Id_Linha>
+         <tem:Id_Rota>?</tem:Id_Rota>
+         <tem:Latitude>?</tem:Latitude>
+         <tem:Longitude>?</tem:Longitude>
+         <tem:QuantidadeVeiculos>?</tem:QuantidadeVeiculos>
+         <tem:QuantidadePontos>?</tem:QuantidadePontos>
+         <!--Optional:-->
+         <tem:HashCode>?</tem:HashCode>
+      </tem:ListaVeiculosTrajeto>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://tempuri.org/ListaVeiculosTrajeto"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

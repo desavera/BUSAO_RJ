@@ -1,0 +1,1 @@
+java -cp /home/mvera/Oficina/BUSAO_RJ/dev/SystemSatWS/lib org.tempuri.WServiceClient
