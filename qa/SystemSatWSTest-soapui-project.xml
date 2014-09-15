@@ -444,15 +444,15 @@
       <soap12:address location="http://200.152.54.164:90/wservice.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/ListaClientesPorUsuario" name="ListaClientesPorUsuario" bindingOperationName="ListaClientesPorUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://tempuri.org/ListaClientesPorUsuario" name="ListaClientesPorUsuario" bindingOperationName="ListaClientesPorUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaClientesPorUsuario>
-         <tem:Id_Config>?</tem:Id_Config>
+         <tem:Id_Config>3</tem:Id_Config>
          <!--Optional:-->
-         <tem:Usuario>?</tem:Usuario>
+         <tem:Usuario>admin</tem:Usuario>
          <!--Optional:-->
-         <tem:Senha>?</tem:Senha>
+         <tem:Senha>op123/*</tem:Senha>
       </tem:ListaClientesPorUsuario>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaClientesPorUsuario"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Request 2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
@@ -466,31 +466,31 @@
          <tem:Senha>devmobile</tem:Senha>
       </tem:ListaClientesPorUsuario>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaClientesPorUsuario"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaLinhasCliente" name="ListaLinhasCliente" bindingOperationName="ListaLinhasCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaClientesPorUsuario"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaLinhasCliente" name="ListaLinhasCliente" bindingOperationName="ListaLinhasCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://veracruz.zirix.com.br:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaLinhasCliente>
          <tem:Id_Config>3</tem:Id_Config>
-         <tem:Cliente>3</tem:Cliente>
+         <tem:Cliente>1</tem:Cliente>
       </tem:ListaLinhasCliente>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaLinhasCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaPontosReferenciaRota" name="ListaPontosReferenciaRota" bindingOperationName="ListaPontosReferenciaRota" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaLinhasCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaPontosReferenciaRota" name="ListaPontosReferenciaRota" bindingOperationName="ListaPontosReferenciaRota" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaPontosReferenciaRota>
-         <tem:Id_Config>?</tem:Id_Config>
-         <tem:Rota>?</tem:Rota>
+         <tem:Id_Config>3</tem:Id_Config>
+         <tem:Rota>106</tem:Rota>
       </tem:ListaPontosReferenciaRota>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaPontosReferenciaRota"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaRotasLinha" name="ListaRotasLinha" bindingOperationName="ListaRotasLinha" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaPontosReferenciaRota"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaRotasLinha" name="ListaRotasLinha" bindingOperationName="ListaRotasLinha" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaRotasLinha>
-         <tem:Id_Config>?</tem:Id_Config>
-         <tem:Linha>?</tem:Linha>
+         <tem:Id_Config>3</tem:Id_Config>
+         <tem:Linha>24</tem:Linha>
       </tem:ListaRotasLinha>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaRotasLinha"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaTrajetosCliente" name="ListaTrajetosCliente" bindingOperationName="ListaTrajetosCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaRotasLinha"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaTrajetosCliente" name="ListaTrajetosCliente" bindingOperationName="ListaTrajetosCliente" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaTrajetosCliente>
@@ -498,16 +498,16 @@
          <tem:Cliente>3</tem:Cliente>
       </tem:ListaTrajetosCliente>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaTrajetosCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosProximos" name="ListaVeiculosProximos" bindingOperationName="ListaVeiculosProximos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaTrajetosCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosProximos" name="ListaVeiculosProximos" bindingOperationName="ListaVeiculosProximos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaVeiculosProximos>
-         <tem:Id_Config>?</tem:Id_Config>
-         <tem:Latitude>?</tem:Latitude>
-         <tem:Longitude>?</tem:Longitude>
+         <tem:Id_Config>3</tem:Id_Config>
+         <tem:Latitude>-76.345222</tem:Latitude>
+         <tem:Longitude>37.029869</tem:Longitude>
       </tem:ListaVeiculosProximos>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaVeiculosProximos"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ListaVeiculosProximos"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaVeiculosTrajeto>
@@ -516,7 +516,7 @@
          <tem:Id_Rota>3</tem:Id_Rota>
          <tem:Latitude>-22.86683</tem:Latitude>
          <tem:Longitude>-43.256726</tem:Longitude>
-         <tem:QuantidadeVeiculos>10</tem:QuantidadeVeiculos>
+         <tem:QuantidadeVeiculos>5</tem:QuantidadeVeiculos>
          <tem:QuantidadePontos>1</tem:QuantidadePontos>
          <!--Optional:-->
          <tem:HashCode>?</tem:HashCode>
@@ -1019,22 +1019,22 @@
          <tem:Longitude>?</tem:Longitude>
       </tem:ListaVeiculosProximos>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosProximosRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosProximosRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://tempuri.org/ListaVeiculosTrajeto" name="ListaVeiculosTrajeto" bindingOperationName="ListaVeiculosTrajeto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
    <soap:Header/>
    <soap:Body>
       <tem:ListaVeiculosTrajeto>
-         <tem:Id_Config>?</tem:Id_Config>
-         <tem:Id_Linha>?</tem:Id_Linha>
-         <tem:Id_Rota>?</tem:Id_Rota>
-         <tem:Latitude>?</tem:Latitude>
-         <tem:Longitude>?</tem:Longitude>
-         <tem:QuantidadeVeiculos>?</tem:QuantidadeVeiculos>
-         <tem:QuantidadePontos>?</tem:QuantidadePontos>
+         <tem:Id_Config>3</tem:Id_Config>
+         <tem:Id_Linha>3</tem:Id_Linha>
+         <tem:Id_Rota>19</tem:Id_Rota>
+         <tem:Latitude>37.029869</tem:Latitude>
+         <tem:Longitude>-76.345222</tem:Longitude>
+         <tem:QuantidadeVeiculos>5/tem:QuantidadeVeiculos>
+         <tem:QuantidadePontos>5</tem:QuantidadePontos>
          <!--Optional:-->
          <tem:HashCode>?</tem:HashCode>
       </tem:ListaVeiculosTrajeto>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosTrajetoRequest"/></con:call></con:operation></con:interface><con:testSuite name="WServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaClientesPorUsuario TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaClientesPorUsuario"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaClientesPorUsuario</con:operation><con:request name="ListaClientesPorUsuario"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/WServiceSoap/ListaVeiculosTrajetoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="WServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListaClientesPorUsuario TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="ListaClientesPorUsuario"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WServiceSoap</con:interface><con:operation>ListaClientesPorUsuario</con:operation><con:request name="ListaClientesPorUsuario"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://200.152.54.164:90/wservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:ListaClientesPorUsuario>
