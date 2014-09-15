@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="19.0.1" >
+        <source path="/home/mvera/Oficina/BusaoRJ/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/assets" >
+            <file
+                name="ic_bus-web.png"
+                path="/home/mvera/Oficina/BusaoRJ/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/assets/ic_bus-web.png" />
+        </source>
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/mvera/Oficina/BusaoRJ/app/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/mvera/Oficina/BusaoRJ/app/src/debug/assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,44 @@
+<!-- From: file:/home/mvera/Oficina/BusaoRJ/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.zirix.android.busaorj.app">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.zirix.android.busaorj.app.LinhaListActivity" android:parentActivityName="com.zirix.android.busaorj.app.BannerAndServerConnect">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.zirix.android.busaorj.app.BannerAndServerConnect"/>
+        </activity>
+        <activity android:label="@string/title_linha_detail" android:name="com.zirix.android.busaorj.app.LinhaDetailActivity">
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:label="@string/title_activity_banner_and_server_connect" android:name="com.zirix.android.busaorj.app.BannerAndServerConnect" android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_sentido" android:name="com.zirix.android.busaorj.app.SinoticoActivity" android:parentActivityName="com.zirix.android.busaorj.app.PontoListListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.zirix.android.busaorj.app.PontoListListActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_linha_settings" android:name="com.zirix.android.busaorj.app.SinoticoSettingsActivity" android:parentActivityName="com.zirix.android.busaorj.app.SinoticoActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.zirix.android.busaorj.app.SentidoActivity"/>
+        </activity>
+        <activity android:label="@string/title_veiculolistactivity_list" android:name="com.zirix.android.busaorj.app.VeiculoListActivityListActivity">
+        </activity>
+        <activity android:label="@string/title_veiculolistactivity_detail" android:name="com.zirix.android.busaorj.app.VeiculoListActivityDetailActivity" android:parentActivityName="com.zirix.android.busaorj.app.VeiculoListActivityListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.zirix.android.busaorj.app.VeiculoListActivityListActivity"/>
+        </activity>
+        <activity android:label="@string/title_pontolist_list" android:name="com.zirix.android.busaorj.app.PontoListListActivity" android:parentActivityName="com.zirix.android.busaorj.app.LinhaListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.zirix.android.busaorj.app.LinhaListActivity"/>
+        </activity>
+        <activity android:label="@string/title_pontolist_detail" android:name="com.zirix.android.busaorj.app.PontoListDetailActivity">
+        </activity>
+    </application>
+
+</manifest>

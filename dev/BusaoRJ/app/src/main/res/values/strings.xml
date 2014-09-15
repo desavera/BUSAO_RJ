@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusaoRJ</string>
+    <string name="title_linha_detail">Sinótico Temporal</string>
+    <string name="title_activity_banner_and_server_connect">Aguarde...</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Zirix Busão RJ 2.0</string>
+    <string name="title_activity_sentido">Grade de veículos mais próximos a você</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuração</string>
+    <string name="title_veiculolistactivity_list">Veiculos</string>
+    <string name="title_veiculolistactivity_detail">VeiculoListActivity Detail</string>
+    <string name="title_pontolist_list">Pontos</string>
+    <string name="title_pontolist_detail">PontoList Detail</string>
+
+</resources>
